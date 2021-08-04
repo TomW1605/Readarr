@@ -182,7 +182,6 @@ class SignalRConnector extends Component {
     if (action === 'updated') {
       this.props.dispatchUpdateItem({
         section,
-        updateOnly: true,
         ...body.resource
       });
     } else if (action === 'deleted') {
